@@ -1,0 +1,23 @@
+4.b
+In the test cases, they are both admissible because the pecman get same scores by both heuristic functions,
+but not consisitent since they have different expanded search nodes(random > euclidean).
+
+All of three heuristics can achieve same scores in bigMaze. 
+But, manhattan has least expanded search nodes, and euclidean's is close to manhattan, while random has much more expanded search nodes.
+I think we can consider manhattan and euclidean are both good heuristic functions, since random heurisitc doesn't solve a good heuristic
+value for A* search and it has to search much more nodes than the other two.
+
+5.
+DFS expands least nodes to get the paths since it only searchs one route from start to end. On the other hand, it doesn't searchs optimal
+solution because it doesn't give the best path for mediumMaze
+
+BFS expands much more nodes to find the paths because it searchs each node for all the levels. On the other hand, it can gives optimal 
+solution for the search problem since it gets higher score for mediumMaze and finds the optimal way.
+
+Uniform Cost search can give optimal solution when we set costs on different paths. This search is much more intelligent while DFS and
+BFS don't work on these cases.
+
+A* search always give optimal solution for all cases since it will calculate g(n) and h(n), but it will expands much more nodes than DFS. 
+A* search relies on the performance of heuristic functions. We can take manhattan and euclidean algorithms as heuristic functions to 
+ensure the performance of A* search.
+
